@@ -1,0 +1,30 @@
+function copyContract() {
+    var contractAddress = document.getElementById("contract-address").innerText;
+    navigator.clipboard.writeText(contractAddress);
+    alert("Contract Address Copied!");
+}
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const preloader = document.getElementById("preloader");
+    const mainContent = document.getElementById("main-content");
+    const preloaderVideo = document.getElementById("preloader-video");
+
+    // When the video ends, show the main website content
+    preloaderVideo.onended = function () {
+        preloader.style.display = "none";
+        mainContent.style.display = "block";
+    };
+});
+
+
+   
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
+  
+    
+
